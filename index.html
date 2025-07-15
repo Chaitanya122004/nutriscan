@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NutriScan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>NutriScan 🍎</h1>
+
+  <!-- Manual Entry -->
+  <input type="text" id="barcodeInput" placeholder="Enter barcode or product name">
+  <button onclick="fetchNutrition()">Check</button>
+
+  <!-- OR Scan with Camera -->
+  <button onclick="startScanner()">📷 Scan Barcode</button>
+  <div id="scanner" style="width: 100%; max-width: 400px; height: 300px; margin-top: 10px;"></div>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
